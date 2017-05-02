@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 5px solid black;
+            padding: 20px;
+            background-color: blue;
+            box-sizing: border-box;
+        }
+        
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background: green;
+            float: left;
+        }
+        
+        .box2 {
+            width: 300px;
+            height: 300px;
+            background: red;
+            float: left;
+        }
+        
+        .box3 {
+            width: 400px;
+            height: 200px;
+            background-color: yellow;
+            /*            float: left;*/
+            clear: left;
+        }
+        
+        .full {
+            width: 100%;
+            background-color: gray;
+/*            height: 280px;*/
+                overflow: auto;
+        }
+
+        .container {
+            width: 900px;
+            margin: auto;
+        }
+        
+        .box4 {
+            width: 280px;
+            height: 280px;
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: orange;
+            float: left;
+        }
+        
+        .full {
+            width: 100%;
+            background-color: gray;
+            /*            height: 280px;*/
+            overflow: auto;
+        }
+        
+        .container1 {
+            width: 900px;
+            margin: auto;
+        }
+        
+        .box5 {
+            width: 280px;
+            height: 280px;
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: cyan;
+            float: left;
+        }
+        
+        .box6 {
+            width: 280px;
+            height: 280px;
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: magenta;
+            float: left;
+        }
+        
+        .full1 {
+            width: 100%;
+            background-color: black;
+/*            height: 280px;*/
+/*            overflow: auto;*/
+        }
+        
+        h1::before {
+            content: "Before"
+        }
+        
+        h1::after {
+            content: "After"
+        }
+        
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class=box></div>
+    <div class=box1></div>
+    <div class=box2></div>
+    <div class=box3></div>
+
+    <div class="container">
+        <div class="box4"></div>
+        <div class="box4"></div>
+        <div class="box4"></div>
+    </div>
+
+    <div class="full">
+        <div class="container1">
+            <div class="box5"></div>
+            <div class="box5"></div>
+            <div class="box5"></div>
+        </div>
+    </div>
+
+    <div class="full1 clearfix">
+        <div class="container1">
+            <div class="box6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti laboriosam quas fugiat blanditiis omnis obcaecati inventore, accusantium, sequi, recusandae necessitatibus eos corrupti similique voluptatem fugit, tenetur quaerat temporibus in repudiandae?</div>
+            <div class="box6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi illo dolorem quis esse, iste dignissimos cupiditate modi, sed. Suscipit consequatur, modi voluptatem expedita doloremque necessitatibus quasi, in delectus quia at. Suscipit consequatur, modi voluptatem expedita doloremque necessitatibus quasi, in delectus quia at. Suscipit consequatur, modi voluptatem expedita doloremque necessitatibus quasi, in delectus quia at </div>
+            <div class="box6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae labore repellat dicta similique. </div>
+        </div>
+    </div>
+
+    <h1>Heading</h1>
+
+</body>
+
+</html>
